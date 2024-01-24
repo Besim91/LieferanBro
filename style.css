@@ -1,0 +1,462 @@
+/* ----------------------------------------------- Fonts ------------------------------------------------- */
+
+@font-face {
+  font-family: "Dardania";
+  src: url("./font/Dardania\ Old.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  height: 100%;
+  font-size: 16px;
+  background-image: url(./img/food/wall.jpg);
+}
+
+#render {
+  height: 100%;
+  width: 100%;
+}
+
+.p-Div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.p-Div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.t-align {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* --------------------------------------------- Header ----------------------------------------- */
+
+#headbar {
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  height: 100px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.logoSection {
+  color: white;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  filter: invert();
+  animation: rotate 20s normal linear infinite;
+}
+
+.adress {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.flag {
+  width: 40px;
+  height: 40px;
+}
+
+.bar {
+  width: 40px;
+  height: 48px;
+  cursor: pointer;
+  filter: invert();
+}
+
+/* ----------------------------------------- Shopping cart bar -------------------------------- */
+
+#shoppingCart {
+  width: 30%;
+  background-color: rgb(183, 32, 37);
+  height: 100%;
+  margin-top: 100px;
+  position: fixed;
+  right: 0;
+  padding: 2%;
+  box-sizing: border-box;
+  z-index: 888;
+}
+
+.hideCart {
+  transform: translateX(0%);
+}
+
+#shoppingCart h2 {
+  color: white;
+}
+
+/* ---------------------------------------- Intro restaurant ---------------------------------- */
+
+#menu {
+  position: absolute;
+  top: 100px;
+  width: 70%;
+  box-shadow: 0px 0px 8px 1px black;
+}
+
+.imgDardania {
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleDardania {
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: wheat;
+  opacity: 0.9;
+  font-family: Dardania;
+  text-align: center;
+}
+.titleDardania h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 50px;
+  font-weight: unset;
+}
+
+.eagle {
+  width: 180px;
+}
+
+.star {
+  width: 20px;
+}
+
+.btnMenu {
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  width: 150px;
+}
+.btnMenuColor {
+  cursor: pointer;
+  background-color: rgb(183, 32, 37);
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 2px 1px black;
+  font-size: 14px;
+}
+
+.btnMenu:hover {
+  cursor: pointer;
+  background-color: rgb(183, 32, 37);
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 2px 1px black;
+  font-size: 14px;
+}
+
+.menuList {
+  background-color: rgb(50, 50, 50);
+  height: 54px;
+}
+
+/* ------------------------------------------ Food Designe ----------------------------------------- */
+
+#foodCart {
+  position: absolute;
+  top: 430px;
+  width: 70%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.mainMenu {
+  height: 220px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 3px 2px gray;
+  position: relative;
+  margin-bottom: 16px;
+  background-color: wheat;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+}
+.plusImg {
+  width: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.imgFoodDiv {
+  padding: 8px;
+  box-sizing: border-box;
+  width: 230px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.foodInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-wrap: anywhere;
+  width: 240px;
+}
+
+#price {
+  margin-top: 8px;
+  font-size: 28px;
+  font-style: italic;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+#amount {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.countDiv {
+  padding: 2px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.countDiv a {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.arrow {
+  width: 15px;
+  filter: opacity(0.3);
+}
+.arrow:hover {
+  filter: unset;
+}
+
+.a-right {
+  transform: rotate(180deg);
+}
+#titleResponsiv {
+  display: none;
+}
+
+#af {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+
+.basketOverview {
+  width: 100%;
+  border: solid 2px rgb(50, 50, 50);
+  background-color: white;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.tableBasket {
+  width: 100%;
+  font-weight: bold;
+}
+.tableBasket a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  font-size: 20px;
+}
+.tableBasket a:hover {
+  color: rgb(183, 32, 37);
+  font-weight: bold;
+}
+.tableBasket td {
+  width: 25%;
+  text-align: center;
+}
+
+.tableRowBasket {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+#sum {
+  width: 100%;
+  height: 40px;
+  border: solid 2px rgb(50, 50, 50);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.order_btn {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 32px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+.order_btn:hover {
+  cursor: pointer;
+}
+
+.btn_color {
+  box-shadow: inset 0px 0px 3px 2px gray;
+  border: 1px solid #4f4c4c;
+}
+
+#shoppingBasket {
+  width: 44px;
+}
+#shoppingBasket:hover {
+  cursor: pointer;
+}
+
+/* -------------------------------------------- Animation ------------------------------------- */
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+/* ---------------------------------------------- Responsiv--------------------------------------------- */
+
+@media (max-width: 800px) {
+  .hideCart {
+    transform: translateX(100%);
+  }
+  #menu {
+    width: 100%;
+  }
+
+  #foodCart {
+    width: 100%;
+  }
+  .adress {
+    display: none;
+  }
+
+  #shoppingCart {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .flag {
+    display: none;
+  }
+
+  .bar {
+    display: none;
+  }
+  .p-Div1 {
+    justify-content: center;
+    gap: 28px;
+  }
+  #shoppingCart {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .titleDardania h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .imgFoodDiv {
+    margin-top: 48px;
+    width: 200px;
+    height: 200px;
+  }
+  .mainMenu {
+    height: 400px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foodInfo {
+    display: none;
+  }
+
+  #titleResponsiv {
+    margin-block-end: 0;
+    margin-block-start: 16px;
+    position: absolute;
+    left: 16px;
+  }
+
+  #foodCart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  #titleResponsiv {
+    display: unset;
+  }
+
+  #price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: unset;
+  }
+}
+
+@media (min-width: 800px) {
+  .shoppingBasket {
+    display: none;
+  }
+}
