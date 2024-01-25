@@ -36,7 +36,7 @@ let mainMenu = [
     piece: [1],
   },
   {
-    image: "/img/food/burek.png",
+    image: "./img/food/burek.png",
     name: "Fleischbörek",
     price: [4.99],
     plusImg: ["./img/icon/plus.png"],
@@ -96,7 +96,7 @@ let drinksArray = [
     piece: [1],
   },
   {
-    image: "/img/food/wasser.png",
+    image: "./img/food/wasser.png",
     name: "Wasser",
     price: [1],
     plusImg: ["./img/icon/plus.png"],
@@ -148,7 +148,7 @@ let sweets = [
     piece: [1],
   },
   {
-    image: "/img/food/tatli.png",
+    image: "./img/food/tatli.png",
     name: "Tatli",
     price: [1],
     plusImg: ["./img/icon/plus.png"],
